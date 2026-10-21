@@ -1,32 +1,106 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Sistema de Préstamos de Equipos de Laboratorio
 
-Currently, two official plugins are available:
+**Estudiante:** Anthony Jacob Barrios Pérez  
+**Carné:** 0902-20-9735  
+**Proyecto:** Tarea 4 - Aplicación React con TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Descripción
 
-## React Compiler
+Este proyecto consiste en una aplicación web desarrollada para administrar el préstamo y la devolución de equipos de un laboratorio universitario.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El sistema permite consultar los equipos disponibles, registrar préstamos, validar los datos de los solicitantes y llevar un control de los equipos que todavía no han sido devueltos.
 
-## Expanding the Oxlint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- React
+- TypeScript
+- Vite
+- CSS
+- JSON Server
+- Git y GitHub
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Funcionalidades principales
+
+- Visualización del inventario de equipos.
+- Búsqueda de equipos por nombre.
+- Filtrado por categorías.
+- Registro de préstamos.
+- Validación del nombre y carné del solicitante.
+- Validación de fechas límite, con un máximo de dos días y sin fines de semana.
+- Identificación de equipos disponibles y prestados.
+- Visualización de préstamos activos y vencidos.
+- Registro de devoluciones.
+- Actualización de la disponibilidad de los equipos.
+- Persistencia de información mediante JSON Server.
+- Manejo de errores de conexión.
+
+## Requisitos
+
+Para ejecutar el proyecto es necesario tener instalado:
+
+- Node.js
+- npm
+
+## Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/abarriosp6-crypto/prestamos-lab.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+2. Ingresar a la carpeta:
+
+```bash
+cd prestamos-lab
+```
+
+3. Instalar las dependencias:
+
+```bash
+npm install
+```
+
+## Ejecución
+
+Es necesario utilizar dos terminales.
+
+### Terminal 1: Servidor de datos
+
+```bash
+npx json-server ./db.json --port 3003
+```
+
+La API estará disponible en:
+
+- http://localhost:3003/equipos
+- http://localhost:3003/prestamos
+
+### Terminal 2: Aplicación React
+
+```bash
+npm run dev
+```
+
+Abrir en el navegador:
+
+http://localhost:5173
+
+**Importante:** ambos servidores deben permanecer ejecutándose para utilizar todas las funcionalidades.
+
+## Estructura del proyecto
+
+- `src/components/`: componentes de la interfaz.
+- `src/pages/`: pantalla de préstamos activos.
+- `src/hooks/`: lógica reutilizable de React.
+- `src/services/`: comunicación con la API.
+- `src/types/`: interfaces de TypeScript.
+- `src/App.tsx`: componente principal.
+- `db.json`: almacenamiento de equipos y préstamos.
+
+## Conclusión
+
+Con el desarrollo de este proyecto se pusieron en práctica conocimientos de React, TypeScript, componentes, hooks, validaciones y consumo de una API REST.
+
+También se comprendió la importancia de mantener actualizada la información de los equipos y almacenar los préstamos para conservar los datos después de actualizar la página.
