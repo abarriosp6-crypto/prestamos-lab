@@ -1,5 +1,5 @@
 export interface Prestamo {
-  id: number;
+  id: string | number;
   equipoId: number;
   solicitante: string;
   carne: string;

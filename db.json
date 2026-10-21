@@ -1,0 +1,99 @@
+{
+  "equipos": [
+    {
+      "id": "1",
+      "nombre": "Samsung Galaxy Tab S9",
+      "categoria": "Tablet",
+      "disponible": true
+    },
+    {
+      "id": "2",
+      "nombre": "Apple iPad 10",
+      "categoria": "Tablet",
+      "disponible": false
+    },
+    {
+      "id": "3",
+      "nombre": "Lenovo Tab M10",
+      "categoria": "Tablet",
+      "disponible": true
+    },
+    {
+      "id": "4",
+      "nombre": "Canon EOS Rebel T7",
+      "categoria": "Cámara",
+      "disponible": true
+    },
+    {
+      "id": "5",
+      "nombre": "Sony Alpha A6400",
+      "categoria": "Cámara",
+      "disponible": true
+    },
+    {
+      "id": "6",
+      "nombre": "Nikon D3500",
+      "categoria": "Cámara",
+      "disponible": true
+    },
+    {
+      "id": "7",
+      "nombre": "Blue Yeti USB",
+      "categoria": "Micrófono",
+      "disponible": true
+    },
+    {
+      "id": "8",
+      "nombre": "HyperX QuadCast",
+      "categoria": "Micrófono",
+      "disponible": true
+    }
+  ],
+  "prestamos": [
+    {
+      "id": "101",
+      "equipoId": 3,
+      "solicitante": "Estudiante de prueba",
+      "carne": "0902-20-00001",
+      "fechaPrestamo": "2026-10-19T10:00:00.000Z",
+      "fechaLimite": "2026-10-20T23:59:59.000Z",
+      "devuelto": true
+    },
+    {
+      "id": "102",
+      "equipoId": 6,
+      "solicitante": "Estudiante de laboratorio",
+      "carne": "0902-20-00002",
+      "fechaPrestamo": "2026-10-19T09:00:00.000Z",
+      "fechaLimite": "2026-10-20T23:59:59.000Z",
+      "devuelto": true
+    },
+    {
+      "id": "pmMFLu-0qr0",
+      "equipoId": 5,
+      "solicitante": "Anthony Jacob Barrios Pérez",
+      "carne": "0902-20-09735",
+      "fechaPrestamo": "2026-10-21T21:13:31.091Z",
+      "fechaLimite": "2026-10-23T18:00:00.000Z",
+      "devuelto": true
+    },
+    {
+      "id": "bY-uShUxROU",
+      "equipoId": 6,
+      "solicitante": "Anthony Jacob Barrios Pérez",
+      "carne": "0902-20-09735",
+      "fechaPrestamo": "2026-10-21T21:20:59.859Z",
+      "fechaLimite": "2026-10-22T18:00:00.000Z",
+      "devuelto": true
+    },
+    {
+      "id": "68x7XqREWB8",
+      "equipoId": 2,
+      "solicitante": "Anthony Jacob Barrios Pérez",
+      "carne": "0902-20-09735",
+      "fechaPrestamo": "2026-10-21T22:07:12.620Z",
+      "fechaLimite": "2026-10-23T18:00:00.000Z",
+      "devuelto": false
+    }
+  ]
+}
