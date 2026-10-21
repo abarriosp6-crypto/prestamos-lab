@@ -104,3 +104,12 @@ http://localhost:5173
 Con el desarrollo de este proyecto se pusieron en práctica conocimientos de React, TypeScript, componentes, hooks, validaciones y consumo de una API REST.
 
 También se comprendió la importancia de mantener actualizada la información de los equipos y almacenar los préstamos para conservar los datos después de actualizar la página.
+
+## Pruebas del sistema
+
+Se realizaron pruebas de inventario, registro de préstamos,
+validación de formularios, devolución de equipos, fechas
+vencidas y persistencia de datos.
+
+El detalle de las pruebas se encuentra en el archivo
+[PRUEBAS.md](PRUEBAS.md).
