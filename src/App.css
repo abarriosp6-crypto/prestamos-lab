@@ -1,0 +1,120 @@
+.aplicacion {
+  max-width: 1250px;
+  margin: auto;
+  padding: 35px 25px;
+}
+
+.encabezado {
+  background: #172554;
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.encabezado h1 {
+  margin: 0 0 10px;
+}
+
+.encabezado p {
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.contador {
+  background: #1e40af;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contador strong {
+  font-size: 24px;
+}
+
+.contador span {
+  display: block;
+  font-size: 13px;
+}
+
+.titulo-seccion {
+  margin: 35px 0 25px;
+}
+
+.titulo-seccion h2 {
+  color: #172554;
+  margin-bottom: 8px;
+}
+
+.lista-equipos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.tarjeta-equipo {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.equipo-icono {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.tarjeta-equipo h3 {
+  margin: 0 0 8px;
+  color: #172554;
+}
+
+.tarjeta-equipo p {
+  color: #64748b;
+}
+
+.disponible, .prestado {
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.disponible {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.prestado {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.tarjeta-equipo button {
+  margin-top: 22px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.tarjeta-equipo button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+@media (max-width: 650px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
